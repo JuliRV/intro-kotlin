@@ -66,5 +66,10 @@ fun main() {
     val resultadoEj2 = mulEj2(a = 20, b = 30)
     println("El resultado del ej2 es: " + resultadoEj2)
 
+    var resultadoEj3 = divEj3(dividendo = 20, divisor = 3)
+    println("El resultado del ej3.1 es: " + resultadoEj3)
+    resultadoEj3 = divEj3(dividendo = 20, divisor = 0)
+    println("El resultado del ej3.2 es: " + resultadoEj3)
+
 
 }
