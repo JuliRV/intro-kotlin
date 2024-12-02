@@ -87,5 +87,8 @@ fun main() {
     val resultadoEj7 = volPiscinaEj7(4,4,3)
     println("El resultado del ej7 es: " + resultadoEj7)
 
+    val x = 5
+    print("Los primeros $x numeros primos son: " )
+    primerosPrimosEj8(x)
 
 }
