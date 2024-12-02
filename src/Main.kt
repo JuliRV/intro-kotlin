@@ -63,4 +63,8 @@ fun main() {
     val resultadoEj1 = sumaEj1(a = 20, b = 30)
     println("El resultado del ej1 es: " + resultadoEj1)
 
+    val resultadoEj2 = mulEj2(a = 20, b = 30)
+    println("El resultado del ej2 es: " + resultadoEj2)
+
+
 }
