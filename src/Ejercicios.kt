@@ -60,3 +60,4 @@ fun primerosPrimosEj8(x: Int) {
         num++
     }
 }
+
