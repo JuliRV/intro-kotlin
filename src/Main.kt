@@ -1,6 +1,22 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+
+    // Condicionales
+    var valueA = 2
+    var valueB = 7
+    if (valueA > valueB) {
+        // Si se cumple, procede a la lógica
+        if(valueB == 3) {
+            //Haz esto...
+        } else {
+            //Sino aquello...
+        }
+    } else {
+        //Sino se cumple el argumento...
+        // Procede aqui.
+    }
+
     //1. Tipos de datos
 
     //Enteros
