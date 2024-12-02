@@ -71,5 +71,10 @@ fun main() {
     resultadoEj3 = divEj3(dividendo = 20, divisor = 0)
     println("El resultado del ej3.2 es: " + resultadoEj3)
 
+    var resultadoEj4 = divEj4(dividendo = 5, divisor = 2)
+    println("El resultado del ej4.1 es: " + resultadoEj4)
+    resultadoEj4 = divEj4(dividendo=20, divisor = 0)
+    println("El resultado del ej4.2 es: " + resultadoEj4)
+
 
 }

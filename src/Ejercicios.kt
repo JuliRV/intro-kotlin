@@ -16,3 +16,11 @@ fun divEj3(dividendo: Int, divisor: Int): Double? {
     }
 }
 
+fun divEj4(dividendo: Int, divisor: Int): Int? {
+    if (divisor != 0){
+        return dividendo / divisor
+    }else {
+        return null
+    }
+}
+
