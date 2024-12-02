@@ -24,3 +24,7 @@ fun divEj4(dividendo: Int, divisor: Int): Int? {
     }
 }
 
+fun porcentajeEj5(total: Double, ganados: Double): Double {
+    return ((ganados/total)*100)
+}
+

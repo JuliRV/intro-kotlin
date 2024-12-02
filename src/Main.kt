@@ -76,5 +76,8 @@ fun main() {
     resultadoEj4 = divEj4(dividendo=20, divisor = 0)
     println("El resultado del ej4.2 es: " + resultadoEj4)
 
+    val resultadoPorcentajeEj5 = porcentajeEj5(total=30.0, ganados=3.0)
+    println("El resultado del ej5 es: " + resultadoPorcentajeEj5 +"%")
+
 
 }
