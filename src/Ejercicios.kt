@@ -28,3 +28,11 @@ fun porcentajeEj5(total: Double, ganados: Double): Double {
     return ((ganados/total)*100)
 }
 
+fun mayorEj6 (a: Int, b: Int ): Int {
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+

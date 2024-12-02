@@ -79,5 +79,10 @@ fun main() {
     val resultadoPorcentajeEj5 = porcentajeEj5(total=30.0, ganados=3.0)
     println("El resultado del ej5 es: " + resultadoPorcentajeEj5 +"%")
 
+    var resultadoEj6 = mayorEj6(a = 20, b = 30)
+    println("El resultado del ej6.1 es: " + resultadoEj6)
+    resultadoEj6 = mayorEj6(a = 3, b = 0)
+    println("El resultado del ej6.2 es: " + resultadoEj6)
+
 
 }
