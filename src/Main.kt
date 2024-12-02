@@ -84,5 +84,8 @@ fun main() {
     resultadoEj6 = mayorEj6(a = 3, b = 0)
     println("El resultado del ej6.2 es: " + resultadoEj6)
 
+    val resultadoEj7 = volPiscinaEj7(4,4,3)
+    println("El resultado del ej7 es: " + resultadoEj7)
+
 
 }

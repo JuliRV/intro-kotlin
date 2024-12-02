@@ -36,3 +36,7 @@ fun mayorEj6 (a: Int, b: Int ): Int {
     }
 }
 
+fun volPiscinaEj7(ancho: Int, largo: Int, alto: Int): Int {
+    return ancho * largo * alto
+}
+
