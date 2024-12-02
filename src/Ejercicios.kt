@@ -40,3 +40,23 @@ fun volPiscinaEj7(ancho: Int, largo: Int, alto: Int): Int {
     return ancho * largo * alto
 }
 
+fun esPrimoEj8(num: Int): Boolean {
+    if (num <= 1) return false
+    for (j in 2 until num) {
+        if (num % j == 0) return false
+    }
+    return true
+}
+
+fun primerosPrimosEj8(x: Int) {
+    var contador = 0
+    var num = 1
+    while (contador < x) {
+        if (esPrimoEj8(num)) {
+            print(num)
+            print(", ")
+            contador++
+        }
+        num++
+    }
+}
