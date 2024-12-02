@@ -63,31 +63,4 @@ fun main() {
     val resultadoEj1 = sumaEj1(a = 20, b = 30)
     println("El resultado del ej1 es: " + resultadoEj1)
 
-    val resultadoEj2 = mulEj2(a = 20, b = 30)
-    println("El resultado del ej2 es: " + resultadoEj2)
-
-    var resultadoEj3 = divEj3(dividendo = 20, divisor = 3)
-    println("El resultado del ej3.1 es: " + resultadoEj3)
-    resultadoEj3 = divEj3(dividendo = 20, divisor = 0)
-    println("El resultado del ej3.2 es: " + resultadoEj3)
-
-    var resultadoEj4 = divEj4(dividendo = 5, divisor = 2)
-    println("El resultado del ej4.1 es: " + resultadoEj4)
-    resultadoEj4 = divEj4(dividendo=20, divisor = 0)
-    println("El resultado del ej4.2 es: " + resultadoEj4)
-
-    val resultadoPorcentajeEj5 = porcentajeEj5(total=30.0, ganados=3.0)
-    println("El resultado del ej5 es: " + resultadoPorcentajeEj5 +"%")
-
-    var resultadoEj6 = mayorEj6(a = 20, b = 30)
-    println("El resultado del ej6.1 es: " + resultadoEj6)
-    resultadoEj6 = mayorEj6(a = 3, b = 0)
-    println("El resultado del ej6.2 es: " + resultadoEj6)
-
-    val resultadoEj7 = volPiscinaEj7(4,4,3)
-    println("El resultado del ej7 es: " + resultadoEj7)
-
-    val x = 5
-    print("Los primeros $x numeros primos son: " )
-    primerosPrimosEj8(x)
 }
