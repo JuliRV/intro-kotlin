@@ -1,4 +1,4 @@
-import kotlin.time.times
+package Ejercicios1
 
 fun sumaEj1(a: Int, b: Int): Int {
     return a + b
