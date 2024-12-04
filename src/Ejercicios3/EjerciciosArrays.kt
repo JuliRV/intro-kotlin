@@ -31,7 +31,7 @@ fun main (){
         3 -> ejercicio3()
         4 -> ejercicio4()
         5 -> ejercicio5()
-       // 6 -> ejercicio6()
+        6 -> ejercicio6()
         else -> println("Por favor selecciona un ejercicio válido del 1 al 6:")
     }
 }
@@ -110,6 +110,7 @@ fun ejercicio4() {
         println("Números ordenados de mayor a menor: ${numeros.joinToString(", ")}")
     }
 }
+
 fun ejercicio5() {
     val numArrayList = arrayListOf(1,2,3,4,5,"ee")
     println("Escribe una cadena de texto, letra o número que desees añadir como string al array")
@@ -121,5 +122,19 @@ fun ejercicio5() {
         }
     }
     println("El array final es: $numArrayList")
+}
+
+fun ejercicio6() {
+    println("Introduce un conjunto de enteros salteados:")
+    val newNumbers = readln().trim()
+    if (newNumbers.isNotEmpty()) {
+        val numeros = newNumbers.split(",").map { it.trim().toInt() }.toIntArray()
+        for(i in 1..1000000){
+            if(i !in numeros){
+                println("El primer numero que falta es: $i")
+                return
+            }
+        }
+    }
 }
 
