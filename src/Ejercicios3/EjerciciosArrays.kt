@@ -30,7 +30,7 @@ fun main (){
         2 -> ejercicio2()
         3 -> ejercicio3()
         4 -> ejercicio4()
-       // 5 -> ejercicio5()
+        5 -> ejercicio5()
        // 6 -> ejercicio6()
         else -> println("Por favor selecciona un ejercicio válido del 1 al 6:")
     }
@@ -110,5 +110,16 @@ fun ejercicio4() {
         println("Números ordenados de mayor a menor: ${numeros.joinToString(", ")}")
     }
 }
-
+fun ejercicio5() {
+    val numArrayList = arrayListOf(1,2,3,4,5,"ee")
+    println("Escribe una cadena de texto, letra o número que desees añadir como string al array")
+    val newToArray = readln().trim()
+    if (newToArray.contains(',')) {
+        println("ERROR, no se permiten comas en la string (prueba sin poner ',')")}else {
+        if (newToArray != null && newToArray.isNotEmpty()) {
+            numArrayList.add(newToArray)
+        }
+    }
+    println("El array final es: $numArrayList")
+}
 
