@@ -1,9 +1,11 @@
 package Ejercicios3
 
+import kotlin.random.Random.Default.nextInt
+
 fun main (){
     println("Lista de ejercicios:: \n" +
             "Ejercicio 1\n" +
-            "Crea una función que dado un array de números inserte un número en una posición designada. Devuelve el nuevo array o nil en caso de que no sea posible\n" +
+            "Crea una función que dado un array de números inserte un número en una posición designada. Devuelve el nuevo array o null en caso de que no sea posible\n" +
             "\n" +
             "Ejercicio 2\n" +
             "Crea una función que dado un conjunto de enteros devuelva si existe un número dentro de él\n" +
@@ -24,15 +26,33 @@ fun main (){
 
     val selected = readlnOrNull()?.toIntOrNull()
     when (selected) {
-        1-> ejercicio1()
-        2-> ejercicio2()
-        3-> ejercicio3()
-        4-> ejercicio4()
-        5-> ejercicio5()
-        6-> ejercicio6()
+        1 -> ejercicio1()
+        //2-> ejercicio2()
+       // 3-> ejercicio3()
+       // 4-> ejercicio4()
+       // 5-> ejercicio5()
+       // 6-> ejercicio6()
         else -> println("Por favor selecciona un ejercicio válido del 1 al 6:")
     }
+}
 
-    
+fun ejercicio1(): ArrayList<Int>? {
+    val numArrayList = arrayListOf(1,2,3,4,5)
+    println("Nuestro array es: $numArrayList")
+
+    println("Inserta un nuevo nº al array:")
+    val newNum = readln()?.toIntOrNull()
+    println("Inserta otro numero para la posicion que ocupara en el array: ")
+    val positionNum = readln()?.toIntOrNull()
+
+    if (positionNum != null && newNum != null && positionNum in 0 .. numArrayList.size) {
+        numArrayList.add(positionNum, newNum)
+        println("El array con un $newNum insertado en la posicion $positionNum queda así: " + numArrayList)
+    }else{
+        println("Error, asegurate de haber introducido un nº válido y una posicion válida")
+        return null
+    }
+    val resultArray = numArrayList
+    return resultArray
 }
 
