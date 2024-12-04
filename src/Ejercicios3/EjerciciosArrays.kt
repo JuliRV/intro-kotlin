@@ -27,11 +27,11 @@ fun main (){
     val selected = readlnOrNull()?.toIntOrNull()
     when (selected) {
         1 -> ejercicio1()
-        //2-> ejercicio2()
-       // 3-> ejercicio3()
-       // 4-> ejercicio4()
-       // 5-> ejercicio5()
-       // 6-> ejercicio6()
+        2 -> ejercicio2()
+       // 3 -> ejercicio3()
+       // 4 -> ejercicio4()
+       // 5 -> ejercicio5()
+       // 6 -> ejercicio6()
         else -> println("Por favor selecciona un ejercicio válido del 1 al 6:")
     }
 }
@@ -54,5 +54,22 @@ fun ejercicio1(): ArrayList<Int>? {
     }
     val resultArray = numArrayList
     return resultArray
+}
+
+fun ejercicio2(): Boolean {
+    val numArrayList = arrayListOf(1,2,3,4,5)
+    println("Nuestro array es: $numArrayList")
+
+    println("Inserta un número para ver si existe: ")
+    val newNum = readln()?.toIntOrNull()
+    if (newNum != null && newNum in 0 .. numArrayList.size) {
+        println("Existe $newNum?")
+        val exists = numArrayList.contains(newNum)
+        println(exists)
+        return true
+    }else{
+        println("El número introducido no existe en el array, prueba con otro")
+        return false
+    }
 }
 
