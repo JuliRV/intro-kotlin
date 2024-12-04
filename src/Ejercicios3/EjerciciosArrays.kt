@@ -29,7 +29,7 @@ fun main (){
         1 -> ejercicio1()
         2 -> ejercicio2()
         3 -> ejercicio3()
-       // 4 -> ejercicio4()
+        4 -> ejercicio4()
        // 5 -> ejercicio5()
        // 6 -> ejercicio6()
         else -> println("Por favor selecciona un ejercicio válido del 1 al 6:")
@@ -88,6 +88,26 @@ fun ejercicio3() {
             }
         }
         println(contador)
+    }
+}
+
+fun ejercicio4() {
+    println("Introduce un conjunto de enteros separados por coma para que los ordene de mayor a menor")
+    val newNumbers = readln()
+    if (newNumbers.isNotEmpty()) {
+        val numeros = newNumbers.split(",").map { it.trim().toInt() }.toIntArray()
+        for (i in numeros.indices) {
+            var max = i
+            for (j in i + 1 until numeros.size) {
+                if (numeros[j] > numeros[max]) {
+                    max = j
+                }
+            }
+            val temp = numeros[i]
+            numeros[i] = numeros[max]
+            numeros[max] = temp
+        }
+        println("Números ordenados de mayor a menor: ${numeros.joinToString(", ")}")
     }
 }
 
