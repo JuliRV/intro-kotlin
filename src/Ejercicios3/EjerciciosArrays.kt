@@ -28,7 +28,7 @@ fun main (){
     when (selected) {
         1 -> ejercicio1()
         2 -> ejercicio2()
-       // 3 -> ejercicio3()
+        3 -> ejercicio3()
        // 4 -> ejercicio4()
        // 5 -> ejercicio5()
        // 6 -> ejercicio6()
@@ -72,4 +72,23 @@ fun ejercicio2(): Boolean {
         return false
     }
 }
+
+fun ejercicio3() {
+    val numArrayList = arrayListOf(1,3,3,4,5)
+    println("Nuestro array es: $numArrayList")
+
+    println("Insert número para ver cuantas veces se repite en el array:")
+    val newNum = readln()?.toIntOrNull()
+    var contador = 0
+    if (newNum != null && newNum in 0 .. numArrayList.size) {
+        println("El número $newNum se repite este número de veces:")
+        for (i in numArrayList.indices) {
+            if (numArrayList[i] == newNum) {
+                contador += 1
+            }
+        }
+        println(contador)
+    }
+}
+
 
