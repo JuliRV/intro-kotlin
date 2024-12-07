@@ -27,7 +27,7 @@ Aquí tienes una lista de los ejercicios realizados hasta el momento:
 2. **Ejercicio 2** - Ejercicios de cadenas de carácteres (Strings Exercises)
 3. **Ejercicio 3** - Ejercicios de Arrays (Arrays Exercises)
 4. ... ¡Y más ejercicios por venir!
-5. **Ejercicio 4** - Ejercicios de Arrays y Objects
+5. **Ejercicio 4** - Ejercicios de Arrays y Objects ( // TODO // Por hacer aún )
 6. **Ejercicio 5** - 
 7. **Ejercicio 6** - 
 8. **Ejercicio 7** - 
