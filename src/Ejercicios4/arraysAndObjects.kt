@@ -99,4 +99,16 @@ fun main() {
         }
         println()
     }
+    val failedStudents = arrayListOf<Student>()
+    for (c in classrooms) {
+        for (Student in c.students) {
+            if (Student.isApproved == false && Student.isProgressing == false) {
+                Student.needHelp = true
+                failedStudents.add(Student)
+
+            }
+        }
+    }
+    println("Alumnos suspendidos de todas las clases: ${failedStudents}")
+
 }
