@@ -4,4 +4,5 @@ import Ejercicios4.Student
 
 interface ClassInterface {
     fun addStudent(student: Student)
+
 }
