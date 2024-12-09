@@ -12,7 +12,7 @@ class ClassRoom(
     }
 
     override fun toString(): String {
-        return "ClassRoom(id=$id, name='$name', students=$students)"
+        return "ClassRoom (id = $id, name = '$name', students = $students)"
     }
 
 
@@ -23,7 +23,8 @@ class Student(
     val name: String,
     var age: Int,
     var isApproved: Boolean,
-    var isProgressing: Boolean
+    var isProgressing: Boolean,
+    var needHelp: Boolean
 ) : StudentInterface {
     override fun write() {
     }
@@ -41,7 +42,7 @@ class Student(
     }
 
     override fun toString(): String {
-        return "Student(id=$id, name='$name', age=$age, isApproved=$isApproved, isProgressing=$isProgressing)"
+        return "Student(id = $id, name = '$name', age = $age, isApproved = $isApproved, isProgressing = $isProgressing, needHelp = $needHelp)"
     }
 
 }
@@ -50,14 +51,14 @@ fun main() {
     val studentsA: ArrayList<Student> = arrayListOf()
     val studentsB: ArrayList<Student> = arrayListOf()
 
-    studentsA.add(Student(1, "Manolo", 40, true, true))
-    studentsA.add(Student(2, "Felipe", 18, true, true))
-    studentsA.add(Student(3, "Pepe", 22, false, false))
+    studentsA.add(Student(1, "Manolo", 40, true, true, false))
+    studentsA.add(Student(2, "Felipe", 18, true, true, false))
+    studentsA.add(Student(3, "Pepe", 22, false, false, false))
 
-    studentsB.add(Student(1, "Maria", 40, false, false))
-    studentsB.add(Student(2, "Alba", 18, false, false))
-    studentsB.add(Student(3, "Juan", 22, true, false))
-    studentsB.add(Student(4, "Dani", 22, true, true))
+    studentsB.add(Student(1, "Maria", 40, false, false, false))
+    studentsB.add(Student(2, "Alba", 18, false, false, false))
+    studentsB.add(Student(3, "Juan", 22, true, false, false))
+    studentsB.add(Student(4, "Dani", 22, true, true, false))
 
 
     val classRoomA = ClassRoom(1, "A", studentsA)
@@ -82,6 +83,17 @@ fun main() {
         println("Alumnos suspendidos y no progresando en la clase ${s.name}:")
         for (Student in s.students) {
             if (Student.isApproved == false && Student.isProgressing == false) {
+                println(Student)
+            }
+        }
+        println()
+    }
+
+    for (c in classrooms) {
+        println("Alumnos que necesitan ayuda:")
+        for (Student in c.students) {
+            if (Student.isApproved == false && Student.isProgressing == false) {
+                Student.needHelp = true
                 println(Student)
             }
         }
