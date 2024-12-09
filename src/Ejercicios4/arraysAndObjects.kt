@@ -63,4 +63,16 @@ fun main() {
 
     println("Class RoomA : ${classRoomA}")
     println("Class RoomB : ${classRoomB}")
+
+    val classrooms = listOf(classRoomA, classRoomB)
+
+    for (c in classrooms) {
+        println("Clase: ${c.name}")
+        for (Student in c.students) {
+            if ('a' in Student.name.lowercase()) {
+                println(Student)
+            }
+        }
+        println()
+    }
 }
