@@ -26,9 +26,9 @@ Aquí tienes una lista de los ejercicios realizados hasta el momento:
 1. **Ejercicio 1** - Introducción a Kotlin: variables, tipos de datos, operadores, control de flujo, condicionales, etc. Ejercicios de numeros (int, float, double...)
 2. **Ejercicio 2** - Ejercicios de cadenas de carácteres (Strings Exercises)
 3. **Ejercicio 3** - Ejercicios de Arrays (Arrays Exercises)
-4. **Ejercicio 4** - Ejercicios de Arrays y Objects
-5. **Ejercicio 5** - ¡Y más ejercicios por venir!
-6. **Ejercicio 6** - 
+4. **Ejercicio 4** - Ejercicios de Arrays y Objectos (Arrays and objects?
+5. **Ejercicio 5** - Ejercicios de Objectos (Object exercises //TODO)
+6. **Ejercicio 6** - ¡Y más ejercicios por venir!
 7. **Ejercicio 7** - 
 
 ## Cómo Ejecutar los Ejercicios
