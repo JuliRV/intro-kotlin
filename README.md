@@ -28,9 +28,7 @@ Aquí tienes una lista de los ejercicios realizados hasta el momento:
 3. **Ejercicio 3** - Ejercicios de Arrays (Arrays Exercises)
 4. **Ejercicio 4** - Ejercicios de Arrays y Objectos (Arrays and objects?
 5. **Ejercicio 5** - Ejercicios de Objectos (Object exercises //TODO)
-6. **Ejercicio 6** - ¡Y más ejercicios por venir!
-7. **Ejercicio 7** - 
-
+6.
 ## Cómo Ejecutar los Ejercicios
 
 Para ejecutar los ejercicios, sigue estos pasos:
