@@ -1,4 +1,4 @@
-# Ejercicios de Kotlin - Bootcamp Rudo
+  # Ejercicios de Kotlin - Bootcamp Rudo
 
 Este repositorio contiene una serie de ejercicios de programación en Kotlin que forman parte del **bootcamp de Kotlin** impartido por los instructores de **Rudo**. Los ejercicios están diseñados para enseñar y practicar conceptos fundamentales de Kotlin, como estructuras de control, funciones, arrays, clases, entre otros.
 
